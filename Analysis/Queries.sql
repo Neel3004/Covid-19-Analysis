@@ -1,8 +1,8 @@
 select * from Project.dbo.coviddeaths where continent is not null order by 3,4
 
 
--- To get an overview of total cases and deaths 
-for a specific country, date, day and to know how many died in respect to total population.
+-- To get an overview of total cases and deaths for a specific country, date, day and to 
+-- know how many died in respect to total population.
 select location,date,total_cases,new_cases, total_deaths, population, total_cases_per_million, 
 total_deaths_per_million from Project..coviddeaths where continent is not null order by 1,2
 
